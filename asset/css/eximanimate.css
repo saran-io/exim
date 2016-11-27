@@ -1,0 +1,25 @@
+@charset "UTF-8";
+/*
+Copyright (c) 2016 Saranraj Santhanam
+*/
+
+/*fadein effects */
+/*make the keyframes that tell the start state and end state of our object*/
+
+@-webkit-keyframes eximfadeIn {from {opacity: 0} to {opacity: 1}}
+@-moz-keyframes eximfadeIn {from {opacity: 0} to {opacity: 1}}
+@keyframes eximfadeIn {from {opacity: 0} to {opacity: 1}}
+
+.exim-fadeIn {
+  opacity: 0;
+  -webkit-animation:eximfadeIn ease-in 1;
+  -moz-animation:eximfadeIn ease-in 1;
+  animation:eximfadeIn ease-in 1; 
+}
+
+.exim-fadeIn.head {
+  -webkit-animation-delay:0.7s;
+  -moz-animation-delay:0.7s;
+  animation-delay:0.7s;
+
+}
